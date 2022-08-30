@@ -12,7 +12,7 @@ void buscarElemento();
 //--------------------------
 
 
-const int MAX = 2;;
+const int MAX = 2;
 int lista[MAX]{};
 int nElementos = 0;
 
@@ -25,7 +25,7 @@ int main()
 void menu()
 {
 	int op = 0;
-	while (op != 7) {
+	while (op != 6) {
 		system("cls"); // somente no windows
 		cout << "Menu Lista Linear";
 		cout << endl << endl;
@@ -39,8 +39,7 @@ void menu()
 		cout << "Opcao: ";
 		cin >> op;
 
-		switch (op)
-		{
+		switch (op) {
 		case 1: inicializar();
 			break;
 		case 2: exibirQuantidadeElementos();
@@ -103,5 +102,21 @@ void inserirElemento()
 
 void buscarElemento()
 {
+	int elemento = 0;
+	bool encontrado = false;
 
+	cout << "\nDigita ai, usuário estranho....: ";
+	cin >> elemento;
+
+ for (int i = 0; i < MAX; i++) {
+	if(elemento == lista[i]) {
+		encontrado = true;
+	}
+ }
+
+ if(encontrado == true) {
+	cout << "Achooooou: " << elemento << "\n";
+ } else {
+	cout << "Nao achou :(" << "\n";
+ }
 }

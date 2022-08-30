@@ -1,3 +1,6 @@
+Nome: Gabriel Sobral
+Email Institucional: Gabriel.Santos378@fatec.sp.gov.br
+
 # Lista Linear
 
 Faça um fork deste repositorio e implemente a função buscarElemento
